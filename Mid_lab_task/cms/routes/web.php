@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SignupController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +27,5 @@ Route::get("/login",[LoginController::class,'index']);
 Route::post("/login",[LoginController::class,'verify']);
 Route::get("/home",[HomeController::class,'index']);
 Route::get("/signup",[SignupController::class,'index']);
+Route::get("/users",[UserController::class,'index']);
+Route::get("/customers",[CustomerController::class,'getdata']);

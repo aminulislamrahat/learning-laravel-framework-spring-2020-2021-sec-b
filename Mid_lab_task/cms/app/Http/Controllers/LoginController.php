@@ -13,9 +13,10 @@ class LoginController extends Controller
 
     public function verify(Request $req)
     {
-    	if( $req->mail == $req->password)
-    	{
-    		return redirect("/home");
-    	}
+        return redirect("/home");
+    	//if( $req->mail == $req->password)
+    	//{
+    		//return redirect("/home");
+    	//}
     }
 }

@@ -6,7 +6,8 @@
 <body>
 	<h1>Login Page</h1>
 
-	<form method="POST" >
+	<form method="POST" action="login" >
+			@csrf
 			<table>
 				<tr>
 					<td><label for="E-mail">E-mail : </label><br></td>
